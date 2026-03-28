@@ -1,0 +1,54 @@
+/* .payment-container {
+  margin-top: 20px;
+}
+
+.payment-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.payment-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.payment-card {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.payment-card:hover {
+  border-color: #d4af37;
+  transform: translateY(-2px);
+}
+
+.payment-card.active {
+  border: 2px solid #d4af37;
+  background: #fff8e5;
+}
+
+.card-form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.card-row {
+  display: flex;
+  gap: 10px;
+} */
+

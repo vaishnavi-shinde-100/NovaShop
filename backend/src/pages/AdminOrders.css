@@ -1,0 +1,42 @@
+.admin-orders {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.order-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.order-header h4 {
+  margin: 0;
+}
+
+.status-buttons {
+  margin-top: 10px;
+}
+
+.status-buttons button {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.status-buttons button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.order-items h5 {
+  margin-top: 15px;
+}
+
+.order-items p {
+  margin: 3px 0;
+}

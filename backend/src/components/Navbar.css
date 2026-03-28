@@ -1,0 +1,209 @@
+/* ===== Container ===== */
+
+.navcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* ===== Navbar ===== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  color: #222222;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* ===== Container ===== */
+
+.navcontainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.desktop-menu-logo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ===== Logo ===== */
+
+.logo h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+/* ===== Desktop Menu ===== */
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #832729;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  scale: calc(1.1);
+  color: #842425;
+}
+
+.nav-item.active {
+  color: #832729;
+  border-bottom: 2px solid #832729;
+}
+
+/* ===== Username ===== */
+
+.username {
+  font-weight: 600;
+  color: #555;
+}
+
+/* ===== Hamburger ===== */
+
+.hamburger {
+  width: 28px;
+  height: 22px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background: #222;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+/* ===== Hamburger Animation ===== */
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===== Sidebar ===== */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100vh;
+  background: white;
+  padding: 80px 30px;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.4s ease;
+  z-index: 1001;
+}
+
+.sidebar.show {
+  right: 0;
+}
+
+/* ===== Sidebar Links ===== */
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background: #f3f4f6;
+}
+
+/* ===== Sidebar User ===== */
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar-user p {
+  margin-top: 12px;
+}
+
+.user-icon {
+  font-size: 22px;
+}
+
+/* ===== Overlay Blur ===== */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: flex;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 1;
+  }
+}

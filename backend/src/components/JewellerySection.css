@@ -1,0 +1,87 @@
+.jewellery-section {
+  padding: 60px 8%;
+  background-color: #f9f6f1; /* Ivory */
+  text-align: center;
+}
+
+.jewellery-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #0f0f0f;
+  letter-spacing: 1px;
+}
+
+/* Grid Layout */
+.jewellery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.jewellery-card {
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* IMAGE (Main Focus) */
+.jewellery-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover; /* shows full image */
+  display: block;
+  margin: auto;
+  transition: transform 0.3s ease;
+  opacity: 0.8;
+  border-radius: 16px;
+}
+
+/* Hover Effect (premium feel) */
+.jewellery-card:hover img {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  opacity: 1;
+}
+
+.jewellery-card:hover {
+  transform: scale(1.05);
+}
+
+/* Text */
+.jewellery-card p {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: #0f0f0f;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* RESPONSIVE (Small screens) */
+@media (max-width: 768px) {
+  .jewellery-card img {
+    height: 180px;
+    width: 100%;
+    background: cover;
+    /* object-fit: contain; */
+    margin: 0 auto; /* center image */
+  }
+}
+
+@media (max-width: 480px) {
+  .jewellery-section {
+    padding: 40px 5%;
+  }
+
+  .jewellery-card img {
+    height: 160px;
+    width: 100%;
+    background: cover;
+    border: 1px solid black;
+  }
+
+  .jewellery-card p {
+    font-size: 0.9rem;
+  }
+}

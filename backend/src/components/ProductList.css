@@ -1,0 +1,45 @@
+.products-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:40px;
+}
+
+.product-card{
+background:white;
+border-radius:15px;
+padding:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+position:relative;
+}
+
+.product-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.product-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.price{
+font-weight:bold;
+color:#2563eb;
+}
+
+.wishlist-icon{
+position:absolute;
+top:15px;
+right:15px;
+font-size:22px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.wishlist-icon:hover{
+transform:scale(1.2);
+}
